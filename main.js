@@ -126,9 +126,9 @@ else
 
 			let c = new t.Color();
 			c.setHSL(i * .1, 1.0, .5);
-
 			let s = 100 + i * 50;
-			let cube = new t.Mesh(new t.BoxGeometry(s, s, s), new t.MeshBasicMaterial({color: c , wireframe: true}));
+			let h = 100 + i * 60;
+			let cube = new t.Mesh(new t.BoxGeometry(s, s, h), new t.MeshBasicMaterial({color: c , wireframe: true}));
 			cube.position.x = win.shape.x + (win.shape.w * .5);
 			cube.position.y = win.shape.y + (win.shape.h * .5);
 
